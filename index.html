@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coaching & comp course website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+
+</head>
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-1 fw-bold ms-5" href="#"><span class="text-primary">TIMES </span> COLLEGIATE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 fs-5 ">
+          <li class="nav-item">
+            <a class="nav-link active text-dark p-4" aria-current="page" href="#home-section-id">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark p-4" href="#about-section-id">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark p-4" href="#features-section-id">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark p-4" href="#courses-section-id">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark p-4" href="#teacher-section-id">Teachers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark p-4 " href="#contact-section-id">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- HOME SECTION -->
+
+
+  <div id="home-section-id" class="header">
+    <section class="home">
+      <h2>Enhance your future with Time Collegiate</h2>
+      <p>"Our Tution coaching clasess provide expert guidance for students from IX, X, XI, XII, Science, Arts & Commerce
+        Our experinced teachers understand individual needs and offer personalized attention .. Interactive teaching
+        methods
+        ensure concept are clear & students acheive their goals Our coaching fosters discipline
+        focun & confidence .. Join us to emprove your Child's Future !....."</p>
+
+      <a class="btn" href="#" onclick="Welcome()">Visit us to know More</a>
+    </section>
+  </div>
+
+
+
+
+  <!-- ABOUT SECTION -->
+
+  <div id="about-section-id" class="padding-section">
+    <div id="about-section-id">
+      <section class="py-5">
+        <h1 class="h1styling text-center text-dark display-5 fw-bold">ABOUT US</h1>
+        <hr class="w-25 m-auto text-dark">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 col-md-12 col-12 pt-5">
+              <img src="./img/about.jpg" style="width: 100%;" alt="">
+            </div>
+
+            <div class="col-sm-12 col-lg-6 col-md-12 col-12">
+              <div class="py-5 ps-5">
+                <h3>Come & Visit Our coaching center & computer lab and Bright your child future</h3>
+                <hr class="w-100 m-auto">
+                <br>
+                <br>
+                <p> "At our tuition coaching center, we strive to create a supportive and stimulating environment that
+                  encourages students to reach their full potential. Regular assessments and progress tracking help
+                  identify areas
+                  of improvement,...
+                  <br>
+                  <br>
+                  <br>
+                  Our teachers are dedicated to fostering a love for learning, promoting critical thinking, and
+                  developing
+                  problem-solving skills. By joining our coaching
+                  classes, your child will gain a competitive edge, build confidence, and develop essential skills for
+                  lifelong
+                  success.....!"
+                </p>
+                <br>
+                <p class="btn btn-dark" onclick="about()">Learn More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
+
+  <!-- AWESOME FEATURES -->
+
+  <div id="features-section-id" class="padding-section">
+    <div class="features text-center">
+      <h1>AWESOME FEATURES</h1>
+      <p class="fs-5">Joint Planning, Observation, Action/Practice , Reflection, and Feedback....</p>
+      <hr class="w-50 m-auto text-dark">
+    </div>
+  </div>
+  <!-- 1st card -->
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 fs-4">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-bookmark fs-1"></i>
+            <h3 class="mt-3">Expert Teacher</h3>
+            <p class="p-2">High Education Teachers to teach the student & this is Teach very politly...</p>
+            <p>
+              <a href="#" class="btn btn-warning">Learn More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2nd Card -->
+
+      <div class="col-md-6 col-lg-4 fs-4">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-file-export fs-1"></i>
+            <h3 class="mt-3">Regular Test</h3>
+            <p class="p-2">Weekly and Monthly Assesments in our coaching center And prepare the progress Report...</p>
+            <p>
+              <a href="#" class="btn btn-warning">Learn More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 3rd card -->
+
+
+      <div class="col-md-6 col-lg-4 fs-4">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-computer fs-1"></i>
+            <h3 class="mt-2">Computer labs</h3>
+            <p class="p-2">With coaching center i provide different types of computer coursesa for the students ...</p>
+            <p>
+              <a href="#" class="btn btn-warning">Learn More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- COURSES -->
+
+  <div id="courses-section-id" class="padding-section">
+    <div class="courses text-center">
+      <h1>POPULAR COURSES</h1>
+      <p class="fs-5">Benefits of student our Managment provide computer courses for students....</p>
+    </div>
+  </div>
+  <div class="container">
+    <main class="row grid g-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="course-cards">
+          <img src="./img/Data analytic img.avif" style="width:100%" alt="">
+          <h3>Data Analytic course</h3>
+          <p>Learn Fundamental of Computer, & more>....</p>
+          <span>Updated 24-sep-2024</span>
+          <br>
+          <br>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+
+      <!-- 2nd card -->
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="course-cards">
+          <img src="./img/digital marketing.jpeg" style="width:100%">
+          <h3>Digital Marketing course</h3>
+          <p>Learn Fundamental of Computer, & more>....</p>
+          <span>Updated 24-sep-2024</span>
+          <br>
+          <br>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <!-- 3rd card -->
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="course-cards">
+          <img src="./img/graphic desinge.jpg" style="width:100%">
+          <h3>Graphic Desinging course</h3>
+          <p>Learn Fundamental of Computer, & more>....</p>
+          <span>Updated 24-sep-2024</span>
+          <br>
+
+          <br>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <!-- 4th card -->
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="course-cards">
+          <img src="./img/basic comp.jpg" style="width:100%">
+          <h3>Basic Computer course</h3>
+          <p>Learn Fundamental of Computer, & more>....</p>
+          <span>Updated 24-sep-2024</span>
+          <br>
+          <br>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <!-- 5th card -->
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="course-cards">
+          <img src="./img/Web desinginmg.avif" style="width:100%">
+          <h3>Web Desinging</h3>
+          <p>Learn Fundamental of Computer, & more>....</p>
+          <span>Updated 24-sep-2024</span>
+          <br>
+          <br>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <!-- 6th card -->
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="course-cards">
+          <img src="./img/Data analytic img.avif" style="width:100%" alt="">
+          <h3>card1</h3>
+          <p>Learn Fundamental of Computer, & more>....</p>
+          <span>Updated 24-sep-2024</span>
+          <br>
+          <br>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+
+
+
+  <!-- COUNTER -->
+
+  <div class="counter-wrapper">
+    <div class="counter" id="hour">
+      <h1 class="count" data-target="732">0</h1>
+      <p>New visiters Every week</p>
+    </div>
+
+
+    <div class="counter" id="min">
+      <h1 class="count" data-target="800">0</h1>
+      <p>Happy student's Every year</p>
+    </div>
+
+
+    <div class="counter" id="sec">
+      <h1 class="count" data-target="200">0</h1>
+      <p>Won Amazing Awards</p>
+    </div>
+
+
+    <div class="counter" id="msec">
+      <h1 class="count" data-target="532">0</h1>
+      <p>New listing Every week</p>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <!-- EXPERT TEACHER -->
+
+  <div id="teacher-section-id" class="padding-section text-center">
+    <section id="expert">
+      <h1>Expert Teacher</h1>
+      <p>I Introduce now our Expert teachers</p>
+      <div class="expert-box">
+
+        <!-- 1st teacher -->
+
+        <div class="profile">
+          <img src="./img/sir hanif.jpeg" alt="">
+          <h6>Sir Kamran Hanif Khan</h6>
+          <p>38 years Experince ( Mathametics & physics )</p>
+          <p>Times Collegiate coaching Teacher</p>
+          <div class="pro-link">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+
+          </div>
+        </div>
+
+        <!-- 2nd teacher -->
+
+        <div class="profile">
+          <img src="./img/sir ahad.jpeg" alt="">
+          <h6>Sir Abdul Ahad</h6>
+          <p>8 years Experince ( Mathametics & physics )</p>
+          <p>Times Collegiate coaching Teacher</p>
+          <div class="pro-link">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+
+          </div>
+        </div>
+
+
+        <!-- 3rd teacher -->
+
+        <div class="profile">
+          <img src="./img/sir sameer.jpeg" alt="">
+          <h6>Sir Sameer Ahmed</h6>
+          <p>3 years Experince ( Teaching Experince )</p>
+          <p>Times Collegiate coaching Teacher</p>
+          <div class="pro-link">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <!-- CONTACT-FORM -->
+
+  <div class="padding-section" id="contact-section-id">
+    <div class="contact-contain">
+      <form action="" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in Touch</h2>
+          <hr>
+        </div>
+        <input type="text" id="name" placeholder="Your Name" class="contact-input" required>
+        <input type="email" id="emailid" placeholder="Your Email" class="contact-input" required>
+        <textarea name="msg" id="msgbox" placeholder="Your Message" class="contact-input"></textarea>
+        <button type="button" onclick="submit()">Submit <img src=""></button>
+      </form>
+      <div class="contact-right">
+        <img src="./img/right_img.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  
+
+        <!-- FOOTER -->
+
+  <footer>
+
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <li>Home</li>
+      <li>Abour us</li>
+      <li>Testimonials</li>
+      <li>Terms of Services</li>
+    </div>
+
+
+
+    <div class="footer-col">
+      <h3>Resourses</h3>
+      <li>Guides</li>
+      <li>Research</li>
+      <li>Expert Teachers</li>
+      <li>Marketing services</li>
+    </div>
+
+
+    <div class="footer-col">
+      <h3>Contact Detail</h3>
+      <li>SIR ABDUL AHAD KHAN</li>
+      <li>+923120243481</li>
+      <li>ahadKamran64@gmail.com</li>
+    </div>
+
+
+
+    <div class="footer-col">
+      <h4>Newsletter</h3>
+        <p>You can trust us, we only snd promo ...</p>
+        <div class="subscribe">
+          <input type="text" placeholder="your Email Adress">
+          <a class="yellow" href="">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright @2021 All rights reserved | This template is made by Tech2etc</p>
+
+      <div class="pro-links">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+
+  </footer>
+
+ 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
+
